@@ -1,0 +1,5 @@
+.terraform
+.vscode
+terraform.tfstate*
+**/templates/images
+!**/templates/images/README.md
