@@ -40,7 +40,7 @@ variable "k3s_agent_additional_args" {
 
 variable "k3s_server_args" {
   type        = list
-  default     = ["server", "--disable-agent"]
+  default     = ["server"]
   description = ""
 }
 
