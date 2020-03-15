@@ -158,3 +158,9 @@ variable "vcpu" {
   default     = 2
   description = ""
 }
+
+variable "state_disk_size" {
+  type        = number
+  default     = 4294967296
+  description = ""
+}

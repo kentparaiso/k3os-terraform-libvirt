@@ -36,7 +36,7 @@ resource "libvirt_cloudinit_disk" "cloud_init" {
 resource "libvirt_volume" "k3os_state_disk" {
   name   = "${var.hostname}-state.qcow2"
   pool   = var.storage_pool_name
-  size   = 2147483648
+  size   = var.state_disk_size
   format = "qcow2"
 }
 
