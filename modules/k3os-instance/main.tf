@@ -42,8 +42,10 @@ resource "libvirt_volume" "k3os_state_disk" {
 
 resource "libvirt_domain" "k3os_instance" {
   name   = var.hostname
-  memory = "2048"
-  vcpu   = 1
+  memory = var.memory
+  vcpu   = var.vcpu
+
+  autostart = var.autostart
 
   kernel    = module.k3os_disks.kernel_volume_id
   initrd    = module.k3os_disks.initrd_volume_id

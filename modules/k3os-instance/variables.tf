@@ -140,3 +140,21 @@ variable "storage_pool_name" {
   type        = string
   description = ""
 }
+
+variable "autostart" {
+  type        = bool
+  default     = true
+  description = ""
+}
+
+variable "memory" {
+  type        = string
+  default     = "2048"
+  description = ""
+}
+
+variable "vcpu" {
+  type        = number
+  default     = 2
+  description = ""
+}
