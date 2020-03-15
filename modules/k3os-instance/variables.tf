@@ -149,12 +149,12 @@ variable "autostart" {
 
 variable "memory" {
   type        = string
-  default     = "2048"
+  default     = "4096"
   description = ""
 }
 
 variable "vcpu" {
   type        = number
-  default     = 1
+  default     = 2
   description = ""
 }
