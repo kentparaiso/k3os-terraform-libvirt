@@ -17,12 +17,13 @@ fire up a build. You might want to follow the directions mentioned [here](https:
 
 ## Quickstart
 
-1. Download k3os-vmlinuz-amd64, k3os-initrd-amd64, and k3os-amd64.iso, place those images
-   in ./template/images
-2. cd to ```./template```
+1. Download ```k3os-vmlinuz-amd64```, ```k3os-initrd-amd64```, and
+   ```k3os-amd64.iso``` from the [k3os releases](https://github.com/rancher/k3os/releases)
+   page, place those images in ```./template/images```.
+2. cd to ```./template```.
 3. Customize ```main.tf``` according to your requirements. Set ```ssh_authorized_keys```
    to your SSH public key! *It's a list, so you can set multiple public keys.*
-4. Execute ```terraform plan```
+4. Execute ```terraform plan```.
 5. If you like what you see. Run ```terraform apply```.
 
 ## How it (roughly) works
