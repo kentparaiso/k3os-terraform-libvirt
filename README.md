@@ -27,8 +27,8 @@ fire up a build. You might want to follow the directions mentioned [here](https:
 
 ## How it (roughly) works
 
-1.  Terraform will tell libvirt to create a directory-based storage pool.
-2.  It'll populate the said storage pool with a common copy of the kernel and initrd, and
+1.  Terraform tells libvirt to create a directory-based storage pool.
+2.  Populate the said storage pool with a common copy of the kernel and initrd, and
     N number of copies of ```k3os-amd64.iso``` as ```${hostname}-install.iso```.
 3.  Create a ```${hostname}-cloudinit.iso``` for each domain in the storage pool, with
     the rendered contents of ```./modules/k3os-instance/userdata/config_yml.tpl``` as
