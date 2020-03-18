@@ -57,7 +57,7 @@ variable "modules" {
 }
 
 variable "data_sources" {
-  type        = list
+  type    = list
   default = []
   # default     = [
   #   "aws",
@@ -79,7 +79,7 @@ variable "ntp_servers" {
 }
 
 variable "taints" {
-  type        = list
+  type    = list
   default = []
   # default     = [
   #   "key1=value1:NoSchedule",
@@ -89,7 +89,7 @@ variable "taints" {
 }
 
 variable "sysctl" {
-  type        = map
+  type    = map
   default = {}
   # default     = {
   #   "kernel.printk" = "4 4 1 7",
@@ -99,7 +99,7 @@ variable "sysctl" {
 }
 
 variable "environment" {
-  type        = map
+  type    = map
   default = {}
   # default     = {
   #   "http_proxy" = "https://myserver",
@@ -109,7 +109,7 @@ variable "environment" {
 }
 
 variable "labels" {
-  type        = map
+  type    = map
   default = {}
   # default     = {
   #   "region" = "eu-west-1",
@@ -125,12 +125,12 @@ variable "server_url" {
 }
 
 variable "wifi" {
-  type        = list
+  type    = list
   default = []
   # default     = [
   #   {
-  #     "name": "soundwave",
-  #     "passphrase": "pwet"
+  #     "name": "somewifiap",
+  #     "passphrase": "somewifipass"
   #   }
   # ]
   description = ""
@@ -143,7 +143,7 @@ variable "storage_pool_name" {
 
 variable "autostart" {
   type        = bool
-  default     = true
+  default     = false
   description = ""
 }
 

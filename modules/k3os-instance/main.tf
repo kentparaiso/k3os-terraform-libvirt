@@ -5,9 +5,9 @@ terraform {
 }
 
 module "k3os_disks" {
-  source = "../k3os-disks"
+  source            = "../k3os-disks"
   storage_pool_name = var.storage_pool_name
-  unique_id = var.hostname
+  unique_id         = var.hostname
 }
 
 resource "libvirt_cloudinit_disk" "cloud_init" {
